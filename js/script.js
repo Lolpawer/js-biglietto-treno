@@ -10,7 +10,7 @@ etàUtente = parseInt(etàUtente);
 
 //prima calcolo il prezzo base del biglietto, sapendo che costa €0,21 al km
 
-let prezzoDistanza = chilometriUtente * 0.21
+let prezzoDistanza = chilometriUtente * 0.21;
 
 //poi controllo se devo applicare sconti in base all'età e, in caso, calcolo il totale
 
