@@ -13,8 +13,9 @@ etàUtente = parseInt(etàUtente);
 let prezzoDistanza = chilometriUtente * 0.21;
 
 //poi controllo se devo applicare sconti in base all'età e, in caso, calcolo il totale
+//sconto minorenni 20%, over 65 40%
 
-let prezzoFinale;
+let prezzoFinale = prezzoDistanza;
 
 if (etàUtente < 18) {
     prezzoFinale = prezzoDistanza - (prezzoDistanza * 20 / 100);
@@ -22,10 +23,6 @@ if (etàUtente < 18) {
 
 else if (etàUtente > 65) {
     prezzoFinale = prezzoDistanza - (prezzoDistanza * 40 / 100);
-}
-
-else {
-    prezzoFinale = prezzoDistanza;
 }
 
 //poi stampo il risultato
