@@ -5,8 +5,8 @@ let outputHtml = document.getElementById('output');
 
 let chilometriUtente = prompt('Quanti chilometri deve percorrere il passeggero?');
 chilometriUtente = parseInt(chilometriUtente);
-let etàUtente = prompt('Quanti hanni ha il passeggero?');
-etàUtente = parseInt(etàUtente);
+let etaUtente = prompt('Quanti hanni ha il passeggero?');
+etaUtente = parseInt(etaUtente);
 
 //prima calcolo il prezzo base del biglietto, sapendo che costa €0,21 al km
 
@@ -17,11 +17,11 @@ let prezzoDistanza = chilometriUtente * 0.21;
 
 let prezzoFinale = prezzoDistanza;
 
-if (etàUtente < 18) {
+if (etaUtente < 18) {
     prezzoFinale = prezzoDistanza - (prezzoDistanza * 20 / 100);
 }
 
-else if (etàUtente > 65) {
+else if (etaUtente > 65) {
     prezzoFinale = prezzoDistanza - (prezzoDistanza * 40 / 100);
 }
 
